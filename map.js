@@ -55,7 +55,7 @@
 		let map = {
 			store: {}
 		};
-		Object.defineProperties(map, Object.getOwnPropertyDescriptors(mapPrototype))
+		Object.defineProperties(map, Object.getOwnPropertyDescriptors(mapPrototypen))
 		return map
 		}
 module.exports = createMap;
