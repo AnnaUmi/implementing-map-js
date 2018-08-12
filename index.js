@@ -1,7 +1,12 @@
-const map = require('./map');
+const createMap = require('./map');
 
-map.set('hello', 'hola').set('goodbuy', 'adios').set('thank u', 'gracias')
+let phones = createMap();
+let contacts = createMap();
 
-for(let value of map){
-    console.log(value)
+phones.set('model', 'iPhone').set('madeBy', 'Apple').set('madeIn', 'China');
+contacts.set('Anna Vlasenko', 'email@annavlasenko.com').set('Spiderman', 'email@spiderman.com');
+
+console.log(contacts.keys)
+for(let key of phones){
+    console.log(key)
 }
